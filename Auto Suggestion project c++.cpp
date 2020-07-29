@@ -51,6 +51,8 @@ void insert1(node* t,string s)
 		
 void print_suggestions(node* p,string s)
 {
+	
+	//  printing using DFS (recursion)
 	// prints the suggestions if prefix is found
 	node* h=p;
 	map1 m=h->m1;
@@ -65,6 +67,8 @@ void print_suggestions(node* p,string s)
 	else if(h->x==1)
 	{
 		//if a word is a prefix of another present word
+		// means if a word is ended at its parent index , that's why current x is 1 (h->x = 1)
+
 		cout<<s<<endl;
 	}
 	
